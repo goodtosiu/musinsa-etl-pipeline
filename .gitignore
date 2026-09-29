@@ -1,0 +1,29 @@
+# Python Environments & Cache
+.env
+.venv
+env/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Airflow Local Data & Logs
+logs/
+dags/data/
+airflow.cfg
+airflow.db
+airflow-webserver.pid
+webserver_config.py
+
+# Data Files (보안 및 용량 문제로 원천 데이터 제외)
+*.txt
+*.csv
+*.json
+*.log
+
+# OS & IDE (macOS, VS Code, Cursor 등에서 자동 생성되는 파일)
+.DS_Store
+.vscode/
+.idea/
+*.swp
