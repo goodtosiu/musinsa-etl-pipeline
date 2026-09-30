@@ -39,9 +39,9 @@
 이 파이프라인은 `schedule_interval=None`으로 설정되어 있어 스케줄러에 의해 자동으로 동작하지 않습니다. 
 
 1. Airflow Web UI에 접속합니다.
-2. `clothing_etl_pipeline` DAG를 활성화(Unpause) 합니다.
+2. `clothing_etl_pipeline` DAG를 활성화합니다.
 3. 우측 상단의 **Trigger DAG** 버튼을 클릭하여 수동으로 실행합니다.
 
 ## 📝 향후 개선 가능 사항 (To-Do)
 
-- **알림 기능(Alerts):** GPU 서버 장애나 DB 연결 끊김으로 파이프라인이 중단(Failed)될 경우, 즉각적인 인지를 위해 `on_failure_callback`을 활용한 Slack 또는 이메일 알림 연동 기능 추가를 권장합니다.
+- **알림 기능(Alerts):** GPU 서버 장애나 DB 연결 끊김으로 파이프라인이 중단될 경우, 즉각적인 인지를 위해 `on_failure_callback`을 활용한 Slack 또는 이메일 알림 연동 기능을 추가할 수 있습니다.
